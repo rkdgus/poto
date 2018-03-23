@@ -35,21 +35,21 @@
 		<beans:constructor-arg value="c:/zzz/upload" />
 
 	</beans:bean>
-	<!-- <beans:bean id="intercepter" class="com.dgit.intercepter.LoginIntercepter"></beans:bean>
-	<beans:bean id="intercepter1" class="com.dgit.intercepter.AuthIntercepter"></beans:bean> -->
-<!-- 
+	 <beans:bean id="intercepter" class="com.dgit.intercepter.LoginIntercepter"></beans:bean>
+	<!-- <beans:bean id="intercepter1" class="com.dgit.intercepter.AuthIntercepter"></beans:bean>  -->
+ 
 	<interceptors>
 		<interceptor>
-			<mapping path="/user/loginPost" />
+			<mapping path="/member/loginPost" />
 			<beans:ref bean="intercepter" />
 		</interceptor>
-		<interceptor>
+	<!-- 	<interceptor>
 			<mapping path="/sboard/readPage" />
 			<mapping path="/sboard/register" />
 			<mapping path="/sboard/modify" />
 			<beans:ref bean="intercepter1" />
-		</interceptor>
-	</interceptors> -->
+		</interceptor> -->
+	</interceptors> 
 	
 	
 	

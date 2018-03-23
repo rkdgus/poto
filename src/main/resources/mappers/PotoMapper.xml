@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dgit.mapper.PotoMapper">
+	<select id="allPoto" resultType="PotoVO">
+		select * from poto where userid = #{userid}
+	</select>
+	
+	<insert id="insertPoto">
+		insert into poto(userid,title,fullName) values(#{userid},#{title},#{fullName})
+	</insert>
+	
+	<delete id="deletePoto">
+		delete from poto where pno = #{pno}
+	</delete>
+</mapper>

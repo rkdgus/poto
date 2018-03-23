@@ -21,7 +21,39 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
-	<context:component-scan base-package="com.dgit.poto" />
+		<beans:bean
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
+		id="multipartResolver">
+
+		<beans:property value="10485760" name="maxUploadSize" />
+
+	</beans:bean>
+
+
+	<beans:bean class="java.lang.String" id="uploadPath">
+
+		<beans:constructor-arg value="c:/zzz/upload" />
+
+	</beans:bean>
+	<!-- <beans:bean id="intercepter" class="com.dgit.intercepter.LoginIntercepter"></beans:bean>
+	<beans:bean id="intercepter1" class="com.dgit.intercepter.AuthIntercepter"></beans:bean> -->
+<!-- 
+	<interceptors>
+		<interceptor>
+			<mapping path="/user/loginPost" />
+			<beans:ref bean="intercepter" />
+		</interceptor>
+		<interceptor>
+			<mapping path="/sboard/readPage" />
+			<mapping path="/sboard/register" />
+			<mapping path="/sboard/modify" />
+			<beans:ref bean="intercepter1" />
+		</interceptor>
+	</interceptors> -->
+	
+	
+	
+	<context:component-scan base-package="com.dgit.controller" />
 	
 	
 	

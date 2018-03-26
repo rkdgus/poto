@@ -30,7 +30,7 @@
 			<ul class="nav navbar-nav  navbar-right">
 			<c:if test="${login != null }">                  
 				<li class="navbar-text">${login.userid} 님 </li>
-				<li><a href="${pageContext.request.contextPath}/member/logout">갤러리</a></li>                                                      
+				<li><a href="${pageContext.request.contextPath}/member/galley">갤러리</a></li>                                                      
 				<li><a href="${pageContext.request.contextPath}/member/logout">로그아웃</a></li>
 			</c:if>
 			<c:if test="${login == null }">
@@ -40,7 +40,7 @@
 				
 			</ul>
 			                   
-		</div>              
+		</div>                      
 	</nav>                                                                    
 </body>                             
 </html>

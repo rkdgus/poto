@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>loginPost</h1>
+	<jsp:include page="../navbar.jsp"></jsp:include>
+	<script type="text/javascript">
+		alert("아이디,비밀번호가 존재하지 않습니다.");
+		location.href="${pageContext.request.contextPath}/member/login";
+	</script>
 </body>
 </html>

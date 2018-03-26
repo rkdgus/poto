@@ -29,11 +29,11 @@ public class LoginIntercepter extends HandlerInterceptorAdapter{
 			String path = (dest!=null)?(String) dest:request.getContextPath();
 			session.removeAttribute("dest");
 			
-			response.sendRedirect(path);//home controller
-		}
-		logger.info("postHandler==========================");
-
-	}
+			response.sendRedirect("galley");//home controller
+		}                                                          
+		logger.info("postHandler==========================");                                            
+                       
+	}                                                                                
 
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)

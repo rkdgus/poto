@@ -24,7 +24,7 @@ public class AuthIntercepter extends HandlerInterceptorAdapter{
 		HttpSession session = request.getSession();
 		if(session.getAttribute("login")==null){
 			saveDest(request);
-			response.sendRedirect(request.getContextPath()+"/user/login");
+			response.sendRedirect(request.getContextPath()+"/member/login");
 			
 			return false;//원래 가야할 controller에 안감
 		}

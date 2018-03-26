@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.dgit.domain.MemberVO;
+import com.dgit.domain.PotoVO;
 import com.dgit.persistence.MemberDao;
+import com.dgit.persistence.PotoDao;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = { "file:src/main/webapp/WEB-INF/spring/**/*.xml" })
@@ -16,17 +17,22 @@ public class MemberDaoTest {
 	@Autowired
 	private MemberDao dao;
 	
+
+	@Autowired
+	private PotoDao pdao;
+	
+	
 /*	@Test
 	public void testCreate() throws Exception{
-		MemberVO vo = new MemberVO();
+		PotoVO vo = new PotoVO();
 		
-		vo.setUserid("1");
-		vo.setUserpw("123");
-		vo.setUsername("123");
-		dao.insertMember(vo);
+		vo.setUserid("asd");
+		vo.setTitle("123");
+		vo.setFullName("12");
+		pdao.insertPoto(vo);
 		System.out.println(vo);
-	}
-	*/
+	}*/
+	
 /*	@Test
 	public void testRead() throws Exception{
 		int bno = 1;

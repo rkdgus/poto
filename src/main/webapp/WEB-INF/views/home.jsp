@@ -12,7 +12,7 @@
 	사진 관리 시스템 
 </h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<P> 환영합니다. 당신의 사진을 관리해 보세요. </P>
 </body>
 </html>
                                     
